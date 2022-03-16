@@ -4,8 +4,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website - Gerald Ju</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Hello World</h1>
+    <!-- Navbar -->
+
+    <nav class="navbar"> 
+        <div class="navbar-container">
+            <a href="#home" id ="navbar-logo">GERALD</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="#home" class="navbar-links" id="home-page">Home</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="#about" class="navbar-links" id="about-page">About Me</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="#projects" class="navbar-links" id="projects-page">Projects</a>
+                </li>   
+                <li class="navbar-btn">
+                    <a href="#contact" class="button" id="contactMe">Contact Me</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main -->
+
+    <div class="homepage" id="home">
+        <div class="homepage-container">
+            <h1 class="homepage-heading">Welcome to my <span>personal</span> website</h1>
+            <p class="homepage-description">Hope you enjoy your stay</p>
+            <button class="homepage-btn">Explore</button>
+        </div>
+    </div>
+
+    <!-- About Me -->
+
+    <div class="aboutpage" id="about">
+        <div class="aboutpage-container">
+            <div class="aboutpage-img-container">
+                <div class="aboutpage-img-card">ICON</div>
+            </div>
+            <div class="aboutpage-content">
+                <h1>what do i do?</h1>
+                <h2>who knows</h2>
+                <p>wanna text me?</p>
+                <button class="aboutpage-btn">
+                    <a href="#">Text me here</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
