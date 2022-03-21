@@ -40,7 +40,7 @@
         <div class="homepage-container">
             <h1 class="homepage-heading">Welcome to my <span>personal</span> website</h1>
             <p class="homepage-description">Hope you enjoy your stay</p>
-            <button class="aboutpage-btn" onClick="window.location.href='#about'"><a href="#about">Explore</a></button>
+            <button class="homepage-btn" onClick="window.location.href='#about'"><a href="#about">Explore</a></button>
         </div>
     </div>
 
@@ -55,12 +55,14 @@
                 <h1>Who am I?</h1>
                 <h2>A bit about me</h2>
                 <p>I am a male undergraduate student in my 5th and final year, undertaking a "Bachelor of Engineering (Honours) & Diploma in Professional Engineering Practice" at the University of Technology Sydney, majoring in Data Engineering.</p>
-                <button class="aboutpage-btn" onClick="window.location.href='./page/about.html'">
-                    <a href="./page/about.html">More</a>
-                </button>
-                <button class="aboutpage-btn">
-                    <a href="./Resume - Gerald Ju.pdf" download="Resume - Gerald Ju.pdf">Resume</a>
-                </button>
+                <div class="about-btn-div">
+                    <button class="aboutpage-btn" onClick="window.location.href='./page/about.html'">
+                        <a href="./page/about.html">More</a>
+                    </button>
+                    <a href="./Resume - Gerald Ju.pdf" target="_blank" class="resume-link" download="Resume - Gerald Ju.pdf">
+                        <button class="resume-btn"><span>Download Resume</span></button>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
@@ -96,7 +98,7 @@
                 <h1>Contact Me</h1>
                 <h2>Lets talk!</h2>
                 <p>yeppers</p>
-                <button class="aboutpage-btn">
+                <button class="homepage-btn">
                     <a href="./page/contact.html">Click Here</a>
                 </button>
             </div>

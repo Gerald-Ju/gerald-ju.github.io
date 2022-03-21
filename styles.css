@@ -248,6 +248,51 @@
   border-bottom: 4px solid rgb(132, 0, 255);
 }
 
+.homepage-btn {
+  font-size: 1.8rem;
+  background: #833ab4;
+  background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+  padding: 20px 60px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-top: 2rem;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.35s;
+  outline: none;
+}
+
+.homepage-btn a {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.homepage-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #ff1ead;
+  color: #fff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.homepage-btn:hover {
+  color: #fff;
+}
+
+.homepage-btn:hover:after {
+  color: #fff;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   .homepage-heading {
     font-size: 60px;
@@ -311,6 +356,13 @@
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 700;
+  max-width: 500px;
+}
+
+.about-btn-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 2rem;
 }
 
 .aboutpage-btn {
@@ -318,11 +370,11 @@
   background: #833ab4;
   background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
   background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-  padding: 20px 60px;
+  width: 200px;
+  height: 70px;
   border: none;
   border-radius: 4px;
   color: #fff;
-  margin-top: 2rem;
   cursor: pointer;
   position: relative;
   transition: all 0.35s;
@@ -379,6 +431,52 @@
   border-radius: 4px;
 }
 
+.resume-btn {
+  all: unset;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(to right, #12d8fa 0%, #1fa2ff 25%, #8f0eff 100%);
+  text-align: center;
+  width: 200px;
+  height: 70px;
+  color: #fff;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+}
+
+.resume-btn span {
+  position: relative;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+}
+
+.resume-btn:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #164e77;
+  color: #fff;
+  transition: all 0.35s;
+  border-radius: 4px;
+}
+
+.resume-btn:hover:after {
+  color: #fff;
+  width: 100%;
+}
+
+.resume-link {
+  font-size: 1.2rem;
+  text-decoration: none;
+  width: 200px;
+  height: 70px;
+}
+
 @media screen and (max-width: 1100px) {
   .aboutpage-container {
     display: grid;
@@ -415,10 +513,16 @@
 
   .aboutpage-content p {
     font-size: 1.5rem;
+    max-width: fit-content;
+  }
+
+  .about-btn-div {
+    justify-items: center;
+    align-items: center;
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 410px) {
   .aboutpage-me-img {
     max-width: 250px;
   }
@@ -441,8 +545,12 @@
     margin-top: 2rem;
   }
 
+  .about-btn-div {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 2rem;
+  }
   .aboutpage-btn {
-    padding: 12px 36px;
     margin: 2.5rem 0;
   }
 }
