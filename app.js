@@ -17,8 +17,10 @@ const highlightMenu = () => {
   const homeMenu = document.querySelector("#home-page");
   const aboutMenu = document.querySelector("#about-page");
   const projectsMenu = document.querySelector("#projects-page");
+  const learningMenu = document.querySelector("#learning-journal-page");
 
   let scrollPos = window.scrollY;
+  // console.log(scrollPos);
 
   // Adds the 'highlight' class to my menu items
 
@@ -34,6 +36,11 @@ const highlightMenu = () => {
   } else if (window.innerWidth > 960 && scrollPos < 2345) {
     projectsMenu.classList.add("highlight");
     aboutMenu.classList.remove("highlight");
+    learningMenu.classList.remove("highlight");
+    return;
+  } else if (window.innerWidth > 960 && scrollPos < 4000) {
+    learningMenu.classList.add("highlight");
+    projectsMenu.classList.remove("highlight");
     return;
   }
 

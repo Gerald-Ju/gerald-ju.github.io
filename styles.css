@@ -8,7 +8,7 @@
 
 .logo {
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(to top, #ff8c08 0%, #ffcbbc 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -46,7 +46,7 @@
 
 #navbar-logo {
   background-color: #ff8177;
-  background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+  background-image: linear-gradient(to top, #ff8c08 0%, #ffcbbc 100%);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -74,7 +74,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 125px;
+  width: 160px;
   text-decoration: none;
   height: 100%;
   transition: all 0.3s ease;
@@ -244,6 +244,17 @@
   -moz-text-fill-color: transparent;
 }
 
+.homepage-description1 {
+  margin: 2rem auto;
+  background: #da22ff;
+  background: -webkit-linear-gradient(to right, #9114ff, #da22ff);
+  background: linear-gradient(to right, #8f0eff, #da22ff);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .highlight {
   border-bottom: 4px solid rgb(132, 0, 255);
 }
@@ -324,7 +335,7 @@
 }
 
 .aboutpage-content {
-  color: #fff;
+  color: rgb(221, 219, 219);
   width: 100%;
 }
 
@@ -428,7 +439,7 @@
 
 .aboutpage-me-img {
   max-width: 500px;
-  border-radius: 4px;
+  border-radius: 50px;
 }
 
 .resume-btn {
@@ -527,11 +538,6 @@
     max-width: 250px;
   }
 
-  .fa-users,
-  .fa-layer-group {
-    font-size: 4rem;
-  }
-
   .aboutpage-content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -580,8 +586,7 @@
 
 .projectpage-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .projectpage-card {
@@ -593,7 +598,14 @@
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  background-image: linear-gradient(
+    to right top,
+    #e8e2e9,
+    #debbe4,
+    #d294df,
+    #c56bd8,
+    #b639d1
+  );
   transition: 0.3s ease-in;
 }
 
@@ -605,10 +617,22 @@
 
 .projectpage-card:nth-child(3) {
   background: #1fa2ff;
+  background-image: radial-gradient(
+    circle,
+    #bbb0a2,
+    #c7a57e,
+    #d3995c,
+    #df8b3a,
+    #eb7912
+  );
+}
+
+.projectpage-card:nth-child(4) {
+  background: #1fa2ff;
   background-image: linear-gradient(
     -225deg,
-    #231557 0%,
-    #44107a 29%,
+    #73ec2c 0%,
+    #3585c7 29%,
     #ff1361 67%,
     #fff800 100%
   );
@@ -666,7 +690,7 @@
 /* Contact */
 
 .contactpage {
-  background-color: #131313;
+  background-color: #000000;
   padding: 10rem 0;
 }
 
@@ -734,6 +758,24 @@
   flex-direction: column;
   color: #fff;
   background-image: linear-gradient(to right, #00dbde 0%, #fc00ff 100%);
+  transition: all 0.5s ease;
+}
+
+#phone {
+  display: none;
+}
+
+.contactpage-img-card:hover {
+  background-image: linear-gradient(to right, #00dbde 0%, #183b86 100%);
+  transition: all 0.5s ease;
+}
+
+.contactpage-img-card:hover #phone {
+  display: block;
+}
+
+.contactpage-img-card:hover .fa {
+  display: none;
 }
 
 @media screen and (max-width: 1100px) {
@@ -772,10 +814,6 @@
 }
 
 @media screen and (max-width: 400px) {
-  .fa-users {
-    font-size: 4rem;
-  }
-
   .contactpage-content h1 {
     font-size: 2rem;
     margin-top: 3rem;
@@ -798,7 +836,7 @@
 /* Footer */
 
 .footer-container {
-  background-color: #000000;
+  background-color: #131313;
   padding: 5rem 0;
   display: flex;
   flex-direction: column;
@@ -882,6 +920,10 @@
   color: #fff;
 }
 
+.footer-link-items a {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 820px) {
   .footer-links {
     padding-top: 2rem;
@@ -913,15 +955,564 @@
 }
 
 /* About Me Page */
+
 body {
-  background-color: #000000;
+  background-color: #131313;
 }
 
-.yes {
-  color: white;
-  padding: 10px;
+.about-html-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.about-html-page-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 200px;
+}
+
+.about-html-page-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 10rem auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.about-html-page h1 {
+  font-size: 2rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+  margin-top: 1rem;
+}
+
+.about-html-page-content {
+}
+
+.about-html-page-content p {
+  color: rgb(221, 219, 219);
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  max-width: 800px;
+}
+
+.about-html-page-img {
+  border-radius: 50%;
+  border: rgb(255, 145, 0) solid 2px;
+  max-width: 600px;
+  margin-right: 10px;
+}
+
+.about-html-page-btn {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.projects-hyperlink {
+  color: #00dbde;
+}
+
+@media screen and (max-width: 1300px) {
+  .about-html-page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+  .about-html-page-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-html-page-img {
+    max-width: 425px;
+  }
+
+  .about-html-page-content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .about-html-page-content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .about-html-page-content p {
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-html-page-img {
+    max-width: 250px;
+  }
+
+  .about-html-page-content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .about-html-page-content p {
+    margin-top: 2rem;
+  }
+}
+
+/* Learning Journal */
+
+.learning-journal-page {
+  background: #131313;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 0;
+}
+
+.learning-journal-page h1 {
+  background-color: #ff8177;
+  background-image: linear-gradient(to right, #ee9173 0%, #ff0844 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+}
+
+.learning-journal-page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+@media screen and (max-width: 1300px) {
+  .learning-journal-page-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .learning-journal-page-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Learning Journal Page */
+
+.learning-html-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.learning-html-page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning-html-page h1 {
+  font-size: 2rem;
+  background-color: #ff8177;
+  background-image: linear-gradient(to top, #ff087b 0%, #ed1a52 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.learningpage-card {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #fff;
+  background-image: linear-gradient(
+    to right top,
+    #e8e2e9,
+    #debbe4,
+    #d294df,
+    #c56bd8,
+    #b639d1
+  );
+  transition: 0.3s ease-in;
+}
+
+.learningpage-card:nth-child(2) {
+  background: #1fa2ff;
+  background: -webkit-linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+  background: linear-gradient(to right, #a6ffcb, #12d8fa, #1fa2ff);
+}
+
+.learningpage-card:nth-child(3) {
+  background: #1fa2ff;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+}
+
+.learningpage-card h2 {
+  text-align: center;
+}
+
+.learningpage-card p {
+  text-align: center;
+  margin-top: 24px;
+  font-size: 20px;
+}
+
+.learningpage-card button {
+  color: #fff;
+  padding: 14px 24px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #131313;
+  font-size: 1rem;
+}
+
+.learningpage-card button:hover {
+  cursor: pointer;
+  transform: scale(1.075);
+}
+
+.learningpage-card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+/* Learning HTML Page */
+
+.published-tag {
+  color: rgb(221, 219, 219);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.learning-html-page-img {
+  max-width: 350px;
+  border-radius: 5px;
+}
+
+.learning-html-page-img1 {
+  max-width: 350px;
+  border-radius: 5px;
+  transform: rotate(90deg) translateY(-100%);
+  transform-origin: top left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  image-rendering: high-quality;
+}
+
+.learning-html-page-img2 {
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.learning-html-page-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning-html-page-img-container p {
+  padding-top: 10px;
+  text-align: left;
+  color: rgb(221, 219, 219);
+  max-width: 500px;
+  font-weight: 700;
+}
+
+.learning-html-page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.learning-html-page-content1 {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.learning-html-page-content p {
+  color: rgb(221, 219, 219);
+  font-size: 500px;
+  margin-top: 1rem;
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+.learning-html-page-content span {
+  color: #af1536;
+}
+
+.learning-html-page-content1 p {
+  color: rgb(221, 219, 219);
+  margin-top: 1rem;
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+.learning-html-page-img-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 5rem;
+}
+
+.learning-html-page-img-grid1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.learning-html-page-img-grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.learning-html-page-img-grid3 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.learning-html-page-img-grid1 p {
+  max-width: 500px;
+  padding-right: 1rem;
+}
+
+.learning-html-page-btn {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.paragraph {
+  display: none;
+}
+
+.learning-html-page-img3 {
+  display: none;
+}
+
+.learning-html-page-img3 {
+  display: none;
+}
+
+.learning-html-page-img5 {
+  margin-top: 1rem;
+  height: 300px;
+  image-rendering: -moz-crisp-edges; /* Firefox */
+  image-rendering: -o-crisp-edges; /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+  image-rendering: crisp-edges;
+  -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+}
+
+.learning-html-page-caption {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  color: rgb(221, 219, 219);
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.reference {
+  display: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+@media screen and (max-width: 1530px) {
+  .learning-html-page-img-grid2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  .learning-html-page-img-grid3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .learning-html-page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5rem auto;
+  }
+
+  .learning-html-page-img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .learning-html-page-img-grid1 {
+    display: none;
+  }
+
+  .learning-html-page-img-grid1 p {
+    max-width: 500px;
+    padding-right: 1rem;
+  }
+
+  .learning-html-page-img {
+    max-width: 200px;
+    margin: 1rem auto;
+  }
+
+  .learning-html-page-img1 {
+    max-width: 200px;
+  }
+
+  .paragraph {
+    display: flex;
+  }
+
+  .learning-html-page-img3 {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .learning-html-page-img4 {
+    margin: 1rem auto;
+    max-width: 400px;
+  }
+
+  .learning-html-page-img5 {
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+
+  .learning-html-page-content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .learning-html-page-content1 {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .learning-html-page-content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .learning-html-page-content p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+
+  .learning-html-page-content1 p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 1.5rem;
+    max-width: fit-content;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .learning-html-page-img-grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .learning-html-page-img-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-self: center;
+  }
+
+  .learning-html-page-img-grid3 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .learning-html-page-img {
+    max-width: 300px;
+  }
+  .learning-html-page-img1 {
+    max-width: 300px;
+  }
+
+  .learning-html-page-content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .learning-html-page-content p {
+    margin-top: 2rem;
+  }
+
+  .learning-html-page-content1 p {
+    margin-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .learning-html-page-img-grid3 {
+    grid-template-columns: 1fr;
+  }
 }

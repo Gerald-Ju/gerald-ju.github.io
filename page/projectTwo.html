@@ -3,15 +3,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st Project</title>
+    <title>Gerald - Project Two</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="yes">
-        <h1>You have discovered the work in progress 2nd project page</h1>
-        <button class="aboutpage-btn" onClick="window.location.href='../index.html#projects'">
-            <a href="../index.html#projects">Go Back</a>
+     <!-- Navbar -->
+
+     <nav class="navbar"> 
+        <div class="navbar-container">
+            <a href="#home" id ="navbar-logo">GERALD</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="../index.html#home" class="navbar-links" id="home-page">Home</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#about" class="navbar-links" id="about-page">About Me</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#projects" class="navbar-links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="../index.html#learning-journal" class="navbar-links" id="learning-journal-page">Learning Journals</a>
+                </li>    
+                <li class="navbar-btn">
+                    <a href="../index.html#contact" class="button" id="contact-me">Contact Me</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="learning-html-page">
+        <div class="learning-html-page-container">
+            <h1>Website Creation (UI/UX) using ReactJs</h1>
+            <h2 class="homepage-description1">2nd Internship at FPT Software</h2>
+            <p class="published-tag">Published March 16, 2022</p>
+            <div class="learning-html-page-img-container">
+                <img class="learning-html-page-img5" src="../images/Certificate.PNG">
+                <p class="learning-html-page-caption">My certificate of completion</p>
+            </div>
+            <div class="learning-html-page-content">
+                <p>My 2nd internship was an interesting one as I had done it virtually. It was called the "Global Short Porgrams - FPT University - SUMMER (Virtual) and is based in Vietnam. The opportunity came to me in one of the many faculty emails sent out to UTS students. After sending in my details, filling forms and going through many interviews, I, only with 3 others from UTS were accepted into the program</p>
+
+                <p>I had originally been put into a project where we create a chess AI and I was pretty excited. However within the first week, a new project had been formed and I had been placed in a new team, a team to create a website about <span>[redacted]</span>.This was a pretty interesting experience as my supervisor told me to start learning how to code websites using ReactJS ASAP, which I did to varying degrees of success. I definitely made a ton of mistakes which my UI/UX senior coder helped me fix, but I enjoyed the process of creating a website and learning what it's like to code in a large company, with project managers and deadlines.</p>
+
+                <p>Shown below is one of the pages I coded and how it evolved as the client asked for changes.</p>
+            </div>
+            <div class="learning-html-page-img-grid2">
+                <img class="learning-html-page-img5" src="../images/tos1.png">
+                <img class="learning-html-page-img5" src="../images/tos2.png">
+                <img class="learning-html-page-img5" src="../images/tos3.png">
+            </div>
+        </div>
+        <button class="homepage-btn about-html-page-btn" onClick="window.location.href='../index.html#projects'">
+            <a href="../index.html#projects">Go back</a>
         </button>
+    
     </div>
+
 </body>
 </html>

@@ -7,10 +7,70 @@
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="yes">
-        <h1>Yes you have discovered the work in progress about page</h1>
-        <button class="aboutpage-btn" onClick="window.location.href='../index.html#about'">
-            <a href="../index.html#about">Go Back</a>
+     <!-- Navbar -->
+
+     <nav class="navbar"> 
+        <div class="navbar-container">
+            <a href="#home" id ="navbar-logo">GERALD</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="../index.html#home" class="navbar-links" id="home-page">Home</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#about" class="navbar-links" id="about-page">About Me</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#projects" class="navbar-links" id="projects-page">Projects</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#learning-journal" class="navbar-links" id="learning-journal-page">Learning Journals</a>
+                </li> 
+                <li class="navbar-btn">
+                    <a href="../index.html#contact" class="button" id="contact-me">Contact Me</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="about-html-page">
+        <div class="about-html-page-container">
+            <div class="about-html-page-img-container">
+                <img class="about-html-page-img" src="../images/Kendo_Photo.PNG" alt=""></img>
+            </div>
+            <div class="about-html-page-content">
+                <h1>About Me</h1>
+                <p>I am a male undergraduate student in my 5th and final year, undertaking a "Bachelor of Engineering (Honours) & Diploma in Professional Engineering Practice" at the University of Technology Sydney, majoring in Data Engineering.<p>  
+
+                <p>I've always enjoyed using computers as a child as my father has been in the IT field for 30+ years. I've followed his footsteps into the technology field and have coded many things over the years during my time in uni, such as the this very website that you are looking at right now. You can check out more at <a href="../index.html#projects" class="projects-hyperlink">Projects</a> or my <a target="_blank" href="https://github.com/Gerald-Ju?tab=repositories" class="projects-hyperlink">GitHub</a> repository.</p>
+
+                <p>For extracurricular activities, as a uni student, I've also felt obligated to join a club. I swam for 6 years at Sydney Olympic Park before quitting during my Year 12 period to study for the HSC so I had planned to join the swimming club here at UTS.</p>
+                
+                <p>However, as I walked around during Orientation Week, I spotted a booth for the UTS Kendo Club. Kendo, a traditional Japanese martial art, descended from swordsmanship and currently uses bamboo swords and protective armour. Pretty awesome I thought. It is.</p>
+            </div>
+        </div>
+        <div class="about-html-page-container1">
+            <h1>Transferable Skills</h1>
+            <div class="about-html-page-content">
+                <h2 class="homepage-description1">Adaptability</h2>
+                <p>Learned ReactJs in a month to move to a new project on short notice</p> 
+                <h2 class="homepage-description1">Teamwork</h2>
+                <p>Have worked with teams in other countries, regardless of language </p>
+                <h2 class="homepage-description1">Attention to Detail</h2>
+                <p>Created websites to the exact specificity that clients wanted</p>
+            </div>
+            <br><br>
+            <div class="about-html-page-content">
+                <p>For more evidence of these skills, see <a class="projects-hyperlink" href="../index.html#projects">Projects</a></p>
+            </div>
+            
+        </div>
+        <button class="homepage-btn about-html-page-btn" onClick="window.location.href='../index.html#about'">
+            <a href="../index.html#about">Go back</a>
         </button>
     </div>
 </body>

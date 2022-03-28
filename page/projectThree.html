@@ -3,15 +3,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>1st Project</title>
+    <title>Gerald - Project Three</title>
     <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-    <div class="yes">
-        <h1>You have discovered the work in progress 3rd project page</h1>
-        <button class="aboutpage-btn" onClick="window.location.href='../index.html#projects'">
-            <a href="../index.html#projects">Go Back</a>
+     <!-- Navbar -->
+
+     <nav class="navbar"> 
+        <div class="navbar-container">
+            <a href="#home" id ="navbar-logo">GERALD</a>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="../index.html#home" class="navbar-links" id="home-page">Home</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#about" class="navbar-links" id="about-page">About Me</a>
+                </li>   
+                <li class="navbar-item">
+                    <a href="../index.html#projects" class="navbar-links" id="projects-page">Projects</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="../index.html#learning-journal" class="navbar-links" id="learning-journal-page">Learning Journals</a>
+                </li>    
+                <li class="navbar-btn">
+                    <a href="../index.html#contact" class="button" id="contact-me">Contact Me</a>
+                </li>                
+            </ul>
+        </div>
+    </nav>
+
+    <div class="learning-html-page">
+        <div class="learning-html-page-container">
+            <h1>Capstone Research</h1>
+            <h2 class="homepage-description1">Analysis of Katydid Signals with Spectrograms and Audio Deep Learning</h2>
+            <p class="published-tag">Published March 15, 2022</p>
+            <div class="learning-html-page-img-container">
+                <img class="learning-html-page-img5" src="../images/Signal.PNG" alt=""></img>
+                <p>Image origin: Sebastian Oberst</p>
+            </div>
+            <div class="learning-html-page-content">
+                <p>Insects communicate in a variety of different ways in nature. They, like humans communicate through their various sensors like smell and taste that can detect chemical signals, sight through different markings and colours as well as acoustics. The sounds they create produce differing patterns for mating calls and warning calls.</p>
+
+                <p>Katydids, from the family Tettigoniidae, also known as the bush cricket or long-horned grasshopper (Kara Rogers, 2015), produce varying sounds for communication. Through sound signals, katydids expand their effect range of communication (Tiwari, 2020), compared to sight, smell and touch whose range is limited. They can become inconspicuous at a moments notice by simply pausing. And like the human language, each species have similar yet different call signals.</p>
+
+                <p>Biologists out in the field sometimes must use poor recording equipment in poor conditions to the best of their abilities. This is often a problem when trying to analyse the data for precise modelling. They also often do not use engineering methods for a systematic approach to reach a desired solution. The current katydid data supplied by my academic mentor has been collected using equipment suitable for this kind of analysis.</p>
+
+                <p>Previously, the data has been analysed using basic machine learning with underdeveloped C++ programs, then a highly comparative time-series analysis toolbox in MATLAB. Machine learning was not as prevalent as it is now, with computer vision and natural language processing taking the forefront. However sound analysis and machine learning still isn’t as well documented as the prior mentioned which may produce some future challenges. This is the research project that I am currently working on for my capstone.</p>
+            </div>
+        </div>
+        <button class="homepage-btn about-html-page-btn" onClick="window.location.href='../index.html#projects'">
+            <a href="../index.html#projects">Go back</a>
         </button>
+    
     </div>
+
 </body>
 </html>
