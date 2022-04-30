@@ -983,7 +983,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 10rem auto;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
   width: 100%;
   max-width: 100%;
 }
@@ -1104,7 +1105,7 @@ body {
 
 .learning-journal-page-wrapper {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr;
 }
 
@@ -1186,6 +1187,18 @@ body {
     #44107a 29%,
     #ff1361 67%,
     #fff800 100%
+  );
+}
+
+.learningpage-card:nth-child(4) {
+  background: #1fa2ff;
+  background-image: radial-gradient(
+    circle,
+    #d1cdc8,
+    #c7a57e,
+    #d3995c,
+    #df8b3a,
+    #ff7700
   );
 }
 
@@ -1283,6 +1296,12 @@ body {
   margin-top: 1rem;
   font-size: 1rem;
   max-width: 800px;
+}
+
+.learning-html-page-content h3 {
+  color: rgb(221, 219, 219);
+  font-size: 20px;
+  margin-top: 1rem;
 }
 
 .learning-html-page-content span {
