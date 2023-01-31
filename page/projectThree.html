@@ -27,9 +27,11 @@
                 <li class="navbar-item">
                     <a href="../index.html#projects" class="navbar-links" id="projects-page">Projects</a>
                 </li>
+                <!--
                 <li class="navbar-item">
                     <a href="../index.html#learning-journal" class="navbar-links" id="learning-journal-page">Learning Journals</a>
                 </li>    
+                -->
                 <li class="navbar-btn">
                     <a href="../index.html#contact" class="button" id="contact-me">Contact Me</a>
                 </li>                
@@ -40,7 +42,7 @@
     <div class="learning-html-page">
         <div class="learning-html-page-container">
             <h1>Capstone Research</h1>
-            <h2 class="homepage-description1">Analysis of Katydid Signals with Spectrograms and Audio Deep Learning</h2>
+            <h2 class="homepage-description1">Applying Machine Learning and Audio Analysis Techniques to Katydid Acoustic Signals</h2>
             <p class="published-tag">Published March 15, 2022</p>
             <div class="learning-html-page-img-container">
                 <img class="learning-html-page-img5" src="../images/Signal.PNG" alt=""></img>
@@ -50,10 +52,8 @@
                 <p>Insects communicate in a variety of different ways in nature. They, like humans communicate through their various sensors like smell and taste that can detect chemical signals, sight through different markings and colours as well as acoustics. The sounds they create produce differing patterns for mating calls and warning calls.</p>
 
                 <p>Katydids, from the family Tettigoniidae, also known as the bush cricket or long-horned grasshopper (Kara Rogers, 2015), produce varying sounds for communication. Through sound signals, katydids expand their effect range of communication (Tiwari, 2020), compared to sight, smell and touch whose range is limited. They can become inconspicuous at a moments notice by simply pausing. And like the human language, each species have similar yet different call signals.</p>
-
-                <p>Biologists out in the field sometimes must use poor recording equipment in poor conditions to the best of their abilities. This is often a problem when trying to analyse the data for precise modelling. They also often do not use engineering methods for a systematic approach to reach a desired solution. The current katydid data supplied by my academic mentor has been collected using equipment suitable for this kind of analysis.</p>
-
-                <p>Previously, the data has been analysed using basic machine learning with underdeveloped C++ programs, then a highly comparative time-series analysis toolbox in MATLAB. Machine learning was not as prevalent as it is now, with computer vision and natural language processing taking the forefront. However sound analysis and machine learning still isn’t as well documented as the prior mentioned which may produce some future challenges. This is the research project that I am currently working on for my capstone.</p>
+                <img class="learning-html-page-img5" src="../images/Signal.PNG" alt=""></img>
+                <p>PyTorch, an open-source machine learning framework was used in the project due to ease of learning and providing abstractions to reduce boilerplate code, resulting in faster model development. I had cut and converted the sample audio signals of the katydids into mel spectrograms which then allowed me to run them through a convolutional neural network (CNN) based off of the TinyVGG CNN. The results of this project however, can not currently be shared.</p>
             </div>
         </div>
         <button class="homepage-btn about-html-page-btn" onClick="window.location.href='../index.html#projects'">
